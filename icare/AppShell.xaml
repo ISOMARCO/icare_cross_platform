@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    FlyoutBehavior="Flyout"
+    Title="icare"
+    x:Class="icare.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:local="clr-namespace:icare"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <FlyoutItem Icon="home.png" Title="Home">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage"
+            Title="Home" />
+    </FlyoutItem>
+
+    <FlyoutItem Icon="profile.png" Title="Profile">
+        <ShellContent Route="ProfilePage" Title="Profile" />
+    </FlyoutItem>
+
+    <FlyoutItem Icon="settings.png" Title="Settings">
+        <ShellContent Route="SettingsPage" Title="Settings" />
+    </FlyoutItem>
+    <Shell.FlyoutHeader>
+        <StackLayout BackgroundColor="LightGray" Padding="10">
+            <Image
+                HeightRequest="80"
+                Source="user_profile.png"
+                WidthRequest="80" />
+            <Label FontSize="Medium" Text="Username" />
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+</Shell>
