@@ -63,7 +63,7 @@
       <None Remove="Resources\Images\home.png" />
       <None Remove="Resources\Images\money.png" />
       <None Remove="Resources\Images\purchase_cart.png" />
-      <None Remove="Resources\Images\return.png" />
+      <None Remove="Resources\Images\return_product.png" />
       <None Remove="Resources\Images\shopping_cart.png" />
       <None Remove="Resources\Images\users.png" />
       <None Remove="Resources\Images\user_management.png" />

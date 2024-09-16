@@ -22,7 +22,7 @@
         <ShellContent Title="İcarəyə verilən" Route="RentProductPage" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Geri qaytarılan" Icon="return.png">
+    <FlyoutItem Title="Geri qaytarılan" Icon="return_product.png">
         <ShellContent Title="Geri qaytarılan" Route="ReturnProductPage" />
     </FlyoutItem>
 
