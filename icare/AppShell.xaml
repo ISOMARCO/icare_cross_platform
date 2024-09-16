@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    FlyoutBehavior="Flyout"
-    Title="icare"
     x:Class="icare.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:icare"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    Title="icare"
+    FlyoutBehavior="Flyout">
 
-    <FlyoutItem Icon="home.png" Title="Home">
+    <FlyoutItem Title="Ana Səhifə" Icon="home.png">
         <ShellContent
+            Title="Ana Səhifə"
             ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage"
-            Title="Home" />
+            Route="MainPage" />
     </FlyoutItem>
 
-    <FlyoutItem Icon="profile.png" Title="Profile">
-        <ShellContent Route="ProfilePage" Title="Profile" />
+    <FlyoutItem Title="Müştərilər" Icon="users.png">
+        <ShellContent Title="Müştərilər" Route="ProfilesPage" />
     </FlyoutItem>
 
-    <FlyoutItem Icon="settings.png" Title="Settings">
-        <ShellContent Route="SettingsPage" Title="Settings" />
+    <FlyoutItem Title="İcarəyə verilən" Icon="checkout.png">
+        <ShellContent Title="İcarəyə verilən" Route="RentProductPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Geri qaytarılan" Icon="return.png">
+        <ShellContent Title="Geri qaytarılan" Route="ReturnProductPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alışlar" Icon="purchase_cart.png">
+        <ShellContent Title="Alışlar" Route="PurchasesPages" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Satışlar" Icon="shopping_cart.png">
+        <ShellContent Title="Satışlar" Route="PurchasesPages" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ödənişlər" Icon="money.png">
+        <ShellContent Title="Ödənişlər" Route="PaymentsPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Məhsullar" Icon="hammer.png">
+        <ShellContent Title="Məhsullar" Route="ProductsPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Profil" Icon="user_management.png">
+        <ShellContent Title="Profil" Route="ProfilePage" />
     </FlyoutItem>
     <Shell.FlyoutHeader>
-        <StackLayout BackgroundColor="LightGray" Padding="10">
+        <StackLayout Padding="10" BackgroundColor="LightSkyBlue">
             <Image
                 HeightRequest="80"
                 Source="user_profile.png"
                 WidthRequest="80" />
-            <Label FontSize="Medium" Text="Username" />
+            <Label FontSize="Medium" Text="Ismayil Nagiyev" />
         </StackLayout>
     </Shell.FlyoutHeader>
 
