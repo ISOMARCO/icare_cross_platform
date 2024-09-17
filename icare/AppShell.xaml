@@ -6,7 +6,30 @@
     xmlns:local="clr-namespace:icare"
     Title="icare"
     FlyoutBehavior="Flyout">
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
+                <!-- Icon on the left -->
+                <Image
+                    Source="{Binding FlyoutIcon}"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    VerticalOptions="Center" />
+
+                <!-- Title on the right -->
+                <Label
+                    Text="{Binding Title}"
+                    FontSize="Medium"
+                    Grid.Column="1"
+                    VerticalOptions="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
     <FlyoutItem Title="Ana Səhifə" Icon="home.png">
         <ShellContent
             Title="Ana Səhifə"
