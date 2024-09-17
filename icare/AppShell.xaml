@@ -14,18 +14,18 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Icon on the left -->
+                <!--  Icon on the left  -->
                 <Image
-                    Source="{Binding FlyoutIcon}"
-                    WidthRequest="30"
                     HeightRequest="30"
-                    VerticalOptions="Center" />
+                    Source="{Binding FlyoutIcon}"
+                    VerticalOptions="Center"
+                    WidthRequest="30" />
 
-                <!-- Title on the right -->
+                <!--  Title on the right  -->
                 <Label
-                    Text="{Binding Title}"
-                    FontSize="Medium"
                     Grid.Column="1"
+                    FontSize="Medium"
+                    Text="{Binding Title}"
                     VerticalOptions="Center" />
             </Grid>
         </DataTemplate>
